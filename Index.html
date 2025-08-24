@@ -1267,7 +1267,15 @@
 
     </div>
 
+// ضع هذا الكود في بداية الوسم <script>
+const SUPABASE_URL = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt1c2RpcnBqeWhpYmJoamlkbXF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYwNjA5NTAsImV4cCI6MjA3MTYzNjk1MH0.jGm0OZFnfS_d2ewpIQVZ8UAR6nzJQm0VvXf_T56fb_A'; // الصق رابط المشروع هنا
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt1c2RpcnBqeWhpYmJoamlkbXF5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NjA2MDk1MCwiZXhwIjoyMDcxNjM2OTUwfQ.pc8cU837ghSXOaZPIIwY0waTRppR-Qd89FdU0AOUkJM'; // الصق مفتاح anon public هنا
 
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+// بيانات الاستبيان (الكود الحالي الخاص بك)
+const surveySections = [ /* ... لا تغيير هنا ... */ ];
+// ... بقية الكود
     <script>
 
         // بيانات الاستبيان
